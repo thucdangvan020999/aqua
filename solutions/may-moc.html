@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Móc & Tự Động Hóa Trang Trại Thủy Sản - AquaTech Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">AquaTech Solutions</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="../index.html#solutions" class="nav-link">Giải pháp</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="solution-detail" class="solution-detail-section">
+        <div class="container">
+            <div class="solution-detail-content scroll-animate">
+                <h2 class="animate-fade-in-up">Máy Móc & Tự Động Hóa Trang Trại Thủy Sản</h2>
+                <p class="animate-fade-in-up">Cung cấp các thiết bị cơ khí và hệ thống tự động hóa hiện đại, giúp tối ưu hóa vận hành và nâng cao hiệu quả sản xuất trong ngành thủy sản.</p>
+                
+                <h3 class="animate-fade-in-up">Máy sục khí tự động</h3>
+                <p class="animate-fade-in-up">Máy sục khí tự động của chúng tôi đảm bảo cung cấp đủ oxy hòa tan cho ao nuôi, một yếu tố cực kỳ quan trọng đối với sức khỏe và sự phát triển của thủy sản. Hệ thống này có thể điều chỉnh cường độ sục khí dựa trên nhu cầu thực tế và mức oxy đo được bởi cảm biến.</p>
+                <p class="animate-fade-in-up">Việc tự động hóa giúp tiết kiệm năng lượng và giảm công sức vận hành, đồng thời tạo ra môi trường sống lý tưởng cho cá và tôm.</p>
+
+                <h3 class="animate-fade-in-up">Hệ thống cho ăn tự động</h3>
+                <p class="animate-fade-in-up">Thiết bị cho ăn tự động giúp phân phối thức ăn chính xác theo lịch trình và liều lượng đã cài đặt. Điều này ngăn chặn việc cho ăn quá mức hoặc thiếu hụt, giảm lãng phí thức ăn và ô nhiễm môi trường nước.</p>
+                <p class="animate-fade-in-up">Hệ thống còn có thể tích hợp cảm biến để điều chỉnh lượng thức ăn dựa trên mức tiêu thụ của đàn thủy sản, tối ưu hóa chi phí thức ăn.</p>
+
+                <h3 class="animate-fade-in-up">Máy lọc nước công nghiệp</h3>
+                <p class="animate-fade-in-up">Máy lọc nước công nghiệp công suất lớn của chúng tôi được thiết kế để xử lý lượng lớn nước, loại bỏ các tạp chất, bùn, tảo và vi khuẩn gây hại. Điều này đặc biệt quan trọng cho các hệ thống nuôi thâm canh và tuần hoàn nước.</p>
+                <p class="animate-fade-in-up">Công nghệ lọc đa tầng giúp đảm bảo chất lượng nước luôn đạt tiêu chuẩn, giảm nguy cơ bùng phát dịch bệnh và cải thiện chất lượng sản phẩm đầu ra.</p>
+
+                <h3 class="animate-fade-in-up">Robot thu hoạch thông minh</h3>
+                <p class="animate-fade-in-up">Trong tương lai gần, AquaTech Solutions hướng tới việc tích hợp robot thu hoạch thông minh, giúp tự động hóa quá trình thu hoạch thủy sản. Robot sẽ được trang bị cảm biến và AI để nhận diện và thu hoạch cá hoặc tôm một cách nhẹ nhàng và hiệu quả, giảm thiểu tổn thất và stress cho vật nuôi.</p>
+                <p class="animate-fade-in-up">Công nghệ này sẽ nâng cao năng suất, giảm chi phí nhân công và đảm bảo sản phẩm tươi ngon nhất đến tay người tiêu dùng.</p>
+                
+                <a href="../index.html#solutions" class="back-to-solutions">
+                    <i class="fas fa-arrow-left"></i>
+                    Quay lại Giải pháp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.solution-detail-content .animate-fade-in-up').forEach(el => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

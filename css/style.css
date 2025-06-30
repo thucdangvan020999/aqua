@@ -1,0 +1,17 @@
+/*
+* Core styles: Base, variables, and global resets.
+* Components: Reusable UI elements like buttons, cards, forms.
+* Layout: Structure and positioning of major page sections.
+* Animations: Keyframe definitions and animation utility classes.
+* Pages: Specific styles for unique pages (e.g., solution details).
+* Utilities: Helper classes and custom scrollbar.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap');
+
+@import 'base.css';
+@import 'animations.css';
+@import 'components.css';
+@import 'layout.css';
+@import 'solution-details.css';
+@import 'utilities.css';

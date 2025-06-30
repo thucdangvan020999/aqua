@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Pháp Nuôi Cá Công Nghệ Cao - AquaTech Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">AquaTech Solutions</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="../index.html#solutions" class="nav-link">Giải pháp</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="solution-detail" class="solution-detail-section">
+        <div class="container">
+            <div class="solution-detail-content scroll-animate">
+                <h2 class="animate-fade-in-up">Giải Pháp Nuôi Cá Công Nghệ Cao</h2>
+                <p class="animate-fade-in-up">AquaTech Solutions cung cấp hệ thống nuôi cá tiên tiến, giúp tăng năng suất và tối ưu hóa quy trình nuôi trồng.</p>
+                
+                <h3 class="animate-fade-in-up">Hệ thống tuần hoàn nước (RAS)</h3>
+                <p class="animate-fade-in-up">Hệ thống tuần hoàn nước (RAS) giúp tái sử dụng nước, giảm thiểu lượng nước thải ra môi trường, đồng thời duy trì chất lượng nước ổn định, lý tưởng cho sự phát triển của cá. Công nghệ này đặc biệt phù hợp cho các trang trại nuôi thâm canh, giúp tiết kiệm chi phí vận hành và tăng mật độ nuôi.</p>
+                <p class="animate-fade-in-up">RAS bao gồm các bộ phận chính như lọc cơ học, lọc sinh học, khử trùng UV, và hệ thống sục khí/oxy hóa, đảm bảo môi trường sống sạch và an toàn cho thủy sản.</p>
+
+                <h3 class="animate-fade-in-up">Giám sát chất lượng nước 24/7</h3>
+                <p class="animate-fade-in-up">Với các cảm biến IoT hiện đại, chúng tôi cung cấp khả năng giám sát liên tục các thông số quan trọng của nước như pH, nhiệt độ, oxy hòa tan, ammonia, nitrite, và nitrate. Dữ liệu được cập nhật theo thời gian thực về ứng dụng di động của bạn, giúp bạn nắm bắt tình hình môi trường nuôi và đưa ra quyết định kịp thời.</p>
+                <p class="animate-fade-in-up">Hệ thống cảnh báo tự động sẽ thông báo cho bạn ngay lập tức khi có bất kỳ thông số nào vượt ngưỡng an toàn, giúp ngăn chặn rủi ro và bảo vệ đàn cá.</p>
+
+                <h3 class="animate-fade-in-up">Tự động cho ăn thông minh</h3>
+                <p class="animate-fade-in-up">Hệ thống cho ăn tự động sử dụng thuật toán thông minh để phân tích hành vi ăn của cá và điều chỉnh lượng thức ăn phù hợp, tránh lãng phí và đảm bảo cá nhận đủ dinh dưỡng. Bạn có thể dễ dàng lập lịch trình cho ăn từ xa qua ứng dụng.</p>
+                <p class="animate-fade-in-up">Công nghệ này không chỉ tiết kiệm chi phí nhân công mà còn cải thiện tốc độ tăng trưởng và sức khỏe của cá bằng cách cung cấp thức ăn đúng liều lượng và thời điểm.</p>
+
+                <h3 class="animate-fade-in-up">Ứng dụng quản lý di động</h3>
+                <p class="animate-fade-in-up">Ứng dụng di động độc quyền của AquaTech Solutions cho phép bạn quản lý toàn bộ trang trại trong lòng bàn tay. Từ việc kiểm tra chất lượng nước, điều khiển hệ thống cho ăn, đến theo dõi lịch sử tăng trưởng của cá, mọi thứ đều được tích hợp một cách tiện lợi.</p>
+                <p class="animate-fade-in-up">Giao diện thân thiện và dễ sử dụng giúp ngay cả người mới bắt đầu cũng có thể vận hành hiệu quả các hệ thống công nghệ cao của chúng tôi.</p>
+                
+                <a href="../index.html#solutions" class="back-to-solutions">
+                    <i class="fas fa-arrow-left"></i>
+                    Quay lại Giải pháp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Additional script for this specific page if needed, e.g., animations for the detail content
+        document.querySelectorAll('.solution-detail-content .animate-fade-in-up').forEach(el => {
+            // Re-observe to trigger animation on page load
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

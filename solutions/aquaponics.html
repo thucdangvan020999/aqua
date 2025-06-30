@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquaponics - Nuôi Trồng Thủy Sản Kết Hợp Thực Vật - AquaTech Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="logo">AquaTech Solutions</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="../index.html#solutions" class="nav-link">Giải pháp</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="solution-detail" class="solution-detail-section">
+        <div class="container">
+            <div class="solution-detail-content scroll-animate">
+                <h1 class="section-title animate-fade-in-up">Aquaponics - Nuôi Trồng Thủy Sản Kết Hợp Thực Vật</h1>
+                <p class="lead-paragraph animate-fade-in-up">Giải pháp Aquaponics của AquaTech Solutions mang đến một hệ thống nuôi trồng bền vững, kết hợp hài hòa giữa nuôi cá và trồng rau hữu cơ.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item animate-fade-in-up">
+                        <i class="fas fa-recycle feature-icon"></i>
+                        <h3>Hệ thống tuần hoàn khép kín</h3>
+                        <p>Aquaponics hoạt động dựa trên một hệ thống tuần hoàn khép kín, nơi chất thải từ cá được chuyển hóa thành chất dinh dưỡng cho cây trồng, và nước được cây làm sạch rồi quay trở lại bể cá. Mô hình này tạo ra một chu trình tự nhiên, giảm thiểu đáng kể nhu cầu thay nước và sử dụng phân bón hóa học.</p>
+                        <p class="feature-note">Hệ thống tuần hoàn khép kín giúp tối ưu hóa việc sử dụng tài nguyên và giảm thiểu tác động môi trường.</p>
+                    </div>
+
+                    <div class="feature-item animate-fade-in-up">
+                        <i class="fas fa-leaf feature-icon"></i>
+                        <h3>Tối ưu hóa dinh dưỡng</h3>
+                        <p>Vi khuẩn nitrat hóa chuyển đổi amoniac từ chất thải cá thành nitrat, là dạng dinh dưỡng mà cây trồng có thể hấp thụ dễ dàng. Hệ thống của chúng tôi được thiết kế để tối ưu hóa quá trình này, đảm bảo cả cá và cây đều nhận được nguồn dinh dưỡng cần thiết để phát triển khỏe mạnh.</p>
+                        <p class="feature-note">Sự cân bằng dinh dưỡng tự nhiên này giúp cây trồng phát triển nhanh và cho năng suất cao, đồng thời duy trì môi trường nước lý tưởng cho cá.</p>
+                    </div>
+
+                    <div class="feature-item animate-fade-in-up">
+                        <i class="fas fa-tint feature-icon"></i>
+                        <h3>Tiết kiệm nước 90%</h3>
+                        <p>So với các phương pháp nuôi trồng truyền thống, hệ thống Aquaponics của chúng tôi có thể tiết kiệm tới 90% lượng nước. Nước được tái sử dụng liên tục trong chu trình, chỉ cần bổ sung lượng nhỏ do bay hơi hoặc hấp thụ bởi cây.</p>
+                        <p class="feature-note">Đây là giải pháp lý tưởng cho các khu vực có nguồn nước hạn chế hoặc muốn áp dụng nông nghiệp bền vững.</p>
+                    </div>
+
+                    <div class="feature-item animate-fade-in-up">
+                        <i class="fas fa-seedling feature-icon"></i>
+                        <h3>Sản xuất hữu cơ 100%</h3>
+                        <p>Với Aquaponics, bạn có thể sản xuất cả cá và rau theo tiêu chuẩn hữu cơ, không sử dụng thuốc trừ sâu, thuốc diệt cỏ hay phân bón hóa học. Sản phẩm thu hoạch được sạch, an toàn và có giá trị dinh dưỡng cao.</p>
+                        <p class="feature-note">Mô hình này không chỉ mang lại lợi ích kinh tế mà còn góp phần bảo vệ sức khỏe con người và môi trường.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="../index.html#solutions" class="back-to-solutions button button-primary">
+                        <i class="fas fa-arrow-left"></i>
+                        Quay lại Giải pháp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.scroll-animate .animate-fade-in-up');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px' // Start animation a bit before element is fully in view
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, observerOptions);
+
+            animateElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Mobile menu toggle
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            mobileMenuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileMenuToggle.querySelector('i').classList.toggle('fa-bars');
+                mobileMenuToggle.querySelector('i').classList.toggle('fa-times'); // Change icon to 'X'
+            });
+
+            // Close mobile menu when a nav-link is clicked
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileMenuToggle.querySelector('i').classList.remove('fa-times');
+                    mobileMenuToggle.querySelector('i').classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

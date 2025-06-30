@@ -1,0 +1,99 @@
+/* base.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #00a86b;
+    --accent-color: #ff6b35;
+    --dark-blue: #003d7a;
+    --light-blue: #e6f3ff;
+    --white: #ffffff;
+    --gray-light: #f8f9fa;
+    --gray-dark: #2c3e50;
+    --gradient-primary: linear-gradient(135deg, #0066cc, #00a86b);
+    --gradient-secondary: linear-gradient(135deg, #ff6b35, #ff8c42);
+    --gradient-hero: linear-gradient(135deg, #0066cc 0%, #00a86b 50%, #0080ff 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --shadow-glow: 0 0 30px rgba(0, 102, 204, 0.3);
+    --shadow-soft: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --blur-light: blur(10px);
+    --blur-heavy: blur(20px);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-dark);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Scroll animations */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-animate-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-animate-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-animate-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Smooth page transitions */
+.page-transition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-transition.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}

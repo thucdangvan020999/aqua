@@ -1,0 +1,26 @@
+/* utilities.css */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: 4px;
+    transition: all 0.1s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-secondary);
+}
+
+/* Selection color */
+::selection {
+    background: rgba(0, 102, 204, 0.2);
+    color: var(--gray-dark);
+}

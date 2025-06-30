@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Pháp Nuôi Cua Chuyên Nghiệp - AquaTech Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">AquaTech Solutions</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="../index.html#solutions" class="nav-link">Giải pháp</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="solution-detail" class="solution-detail-section">
+        <div class="container">
+            <div class="solution-detail-content scroll-animate">
+                <h2 class="animate-fade-in-up">Giải Pháp Nuôi Cua Chuyên Nghiệp</h2>
+                <p class="animate-fade-in-up">Giải pháp toàn diện từ AquaTech Solutions giúp bạn tối ưu hóa quy trình nuôi cua, đảm bảo năng suất cao và chất lượng sản phẩm vượt trội.</p>
+                
+                <h3 class="animate-fade-in-up">Thiết kế ao nuôi chuyên dụng</h3>
+                <p class="animate-fade-in-up">Chúng tôi cung cấp dịch vụ thiết kế và thi công ao nuôi cua chuyên dụng, tối ưu hóa không gian và điều kiện môi trường cho từng giai đoạn phát triển của cua. Thiết kế ao được tính toán kỹ lưỡng để đảm bảo khả năng thoát nước, tuần hoàn và xử lý chất thải hiệu quả.</p>
+                <p class="animate-fade-in-up">Các ao nuôi có thể được tùy chỉnh để phù hợp với quy mô sản xuất và loại cua cụ thể mà bạn muốn nuôi, từ cua thịt đến cua lột.</p>
+
+                <h3 class="animate-fade-in-up">Hệ thống lọc và tuần hoàn</h3>
+                <p class="animate-fade-in-up">Hệ thống lọc nước tiên tiến giúp loại bỏ các chất thải rắn và chất hòa tan độc hại, duy trì môi trường nước sạch và ổn định. Công nghệ tuần hoàn giúp tiết kiệm nước và giảm thiểu tác động đến môi trường.</p>
+                <p class="animate-fade-in-up">Sử dụng các bộ lọc sinh học và vật lý hiệu quả, hệ thống của chúng tôi đảm bảo nguồn nước luôn trong lành, hạn chế dịch bệnh và tăng cường sức khỏe cho cua.</p>
+
+                <h3 class="animate-fade-in-up">Kiểm soát nhiệt độ tự động</h3>
+                <p class="animate-fade-in-up">Nhiệt độ là yếu tố quan trọng ảnh hưởng đến tốc độ tăng trưởng và sức khỏe của cua. Hệ thống kiểm soát nhiệt độ tự động của chúng tôi giúp duy trì nhiệt độ ổn định trong ao nuôi, phù hợp với yêu cầu sinh học của từng loài cua.</p>
+                <p class="animate-fade-in-up">Các cảm biến thông minh liên tục đo lường nhiệt độ nước và tự động điều chỉnh bằng hệ thống làm mát hoặc sưởi ấm, đảm bảo điều kiện tối ưu.</p>
+
+                <h3 class="animate-fade-in-up">Quản lý chu kỳ lột xác</h3>
+                <p class="animate-fade-in-up">Quản lý chu kỳ lột xác của cua là yếu tố then chốt để đạt năng suất cao, đặc biệt với các mô hình nuôi cua lột. Chúng tôi cung cấp các giải pháp giám sát và phân tích dữ liệu để dự đoán và quản lý hiệu quả quá trình lột xác, giúp bạn thu hoạch cua lột đúng thời điểm.</p>
+                <p class="animate-fade-in-up">Công nghệ này giúp giảm tỷ lệ hao hụt do lột xác và tối ưu hóa giá trị kinh tế của sản phẩm.</p>
+                
+                <a href="../index.html#solutions" class="back-to-solutions">
+                    <i class="fas fa-arrow-left"></i>
+                    Quay lại Giải pháp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/footer.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.solution-detail-content .animate-fade-in-up').forEach(el => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

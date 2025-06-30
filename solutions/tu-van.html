@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ Tư Vấn & Đào Tạo Chuyên Nghiệp - AquaTech Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">AquaTech Solutions</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="../index.html#solutions" class="nav-link">Giải pháp</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="solution-detail" class="solution-detail-section">
+        <div class="container">
+            <div class="solution-detail-content scroll-animate">
+                <h2 class="animate-fade-in-up">Dịch Vụ Tư Vấn & Đào Tạo Chuyên Nghiệp</h2>
+                <p class="animate-fade-in-up">AquaTech Solutions không chỉ cung cấp công nghệ mà còn đồng hành cùng bạn với các dịch vụ tư vấn và đào tạo chuyên sâu về nuôi trồng thủy sản.</p>
+                
+                <h3 class="animate-fade-in-up">Tư vấn thiết kế trang trại</h3>
+                <p class="animate-fade-in-up">Đội ngũ chuyên gia của chúng tôi sẽ tư vấn và hỗ trợ bạn trong việc thiết kế trang trại thủy sản từ quy mô nhỏ đến lớn. Chúng tôi tối ưu hóa bố cục, lựa chọn công nghệ phù hợp và lên kế hoạch triển khai hiệu quả nhất, đảm bảo trang trại của bạn hoạt động bền vững và đạt năng suất cao.</p>
+                <p class="animate-fade-in-up">Tư vấn bao gồm cả việc lựa chọn địa điểm, phân tích nguồn nước và đánh giá tiềm năng thị trường.</p>
+
+                <h3 class="animate-fade-in-up">Đào tạo kỹ thuật nuôi</h3>
+                <p class="animate-fade-in-up">Chúng tôi tổ chức các khóa đào tạo chuyên sâu về kỹ thuật nuôi trồng thủy sản công nghệ cao, từ việc vận hành hệ thống RAS, quản lý chất lượng nước, đến phòng ngừa dịch bệnh và kỹ năng thu hoạch. Các khóa học được thiết kế phù hợp với nhiều đối tượng, từ người mới bắt đầu đến các chuyên gia muốn nâng cao kiến thức.</p>
+                <p class="animate-fade-in-up">Chúng tôi cam kết chuyển giao kiến thức và kỹ năng thực tiễn để bạn có thể tự tin vận hành trang trại.</p>
+
+                <h3 class="animate-fade-in-up">Hỗ trợ vận hành 24/7</h3>
+                <p class="animate-fade-in-up">Chúng tôi hiểu rằng việc vận hành một trang trại công nghệ cao có thể gặp nhiều thách thức. Đó là lý do chúng tôi cung cấp dịch vụ hỗ trợ kỹ thuật 24/7. Bất kể khi nào bạn cần, đội ngũ chuyên gia của chúng tôi luôn sẵn sàng giải đáp thắc mắc, khắc phục sự cố và đưa ra lời khuyên kịp thời.</p>
+                <p class="animate-fade-in-up">Sự hỗ trợ liên tục giúp bạn yên tâm trong quá trình sản xuất và giảm thiểu rủi ro.</p>
+
+                <h3 class="animate-fade-in-up">Bảo trì và nâng cấp</h3>
+                <p class="animate-fade-in-up">Để đảm bảo hệ thống của bạn luôn hoạt động ở hiệu suất tối ưu, chúng tôi cung cấp dịch vụ bảo trì định kỳ và nâng cấp công nghệ. Chúng tôi sẽ kiểm tra, bảo dưỡng các thiết bị, cập nhật phần mềm và đề xuất các cải tiến để hệ thống của bạn luôn dẫn đầu xu hướng công nghệ.</p>
+                <p class="animate-fade-in-up">Việc bảo trì và nâng cấp thường xuyên giúp kéo dài tuổi thọ thiết bị và tối đa hóa lợi nhuận đầu tư của bạn.</p>
+                
+                <a href="../index.html#solutions" class="back-to-solutions">
+                    <i class="fas fa-arrow-left"></i>
+                    Quay lại Giải pháp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/footer.js"></script>
+
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.solution-detail-content .animate-fade-in-up').forEach(el => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

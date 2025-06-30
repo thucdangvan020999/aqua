@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Dụng Công Nghệ Thông Minh - AquaTech Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">AquaTech Solutions</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="../index.html#solutions" class="nav-link">Giải pháp</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="solution-detail" class="solution-detail-section">
+        <div class="container">
+            <div class="solution-detail-content scroll-animate">
+                <h2 class="animate-fade-in-up">Ứng Dụng Công Nghệ Thông Minh</h2>
+                <p class="animate-fade-in-up">Chúng tôi phát triển các ứng dụng di động và web để quản lý trang trại thủy sản một cách thông minh, đưa công nghệ 4.0 vào tầm tay bạn.</p>
+                
+                <h3 class="animate-fade-in-up">App quản lý trang trại</h3>
+                <p class="animate-fade-in-up">Ứng dụng di động của chúng tôi là trung tâm điều khiển cho toàn bộ trang trại của bạn. Từ một màn hình duy nhất, bạn có thể theo dõi tình trạng môi trường, kiểm soát các thiết bị tự động hóa, quản lý dữ liệu về đàn vật nuôi, và lập kế hoạch sản xuất.</p>
+                <p class="animate-fade-in-up">Giao diện trực quan, dễ sử dụng giúp bạn dễ dàng nắm bắt mọi thông tin quan trọng mọi lúc, mọi nơi.</p>
+
+                <h3 class="animate-fade-in-up">IoT sensors và monitoring</h3>
+                <p class="animate-fade-in-up">Hệ thống cảm biến IoT (Internet of Things) của chúng tôi được triển khai khắp trang trại để thu thập dữ liệu chính xác và liên tục về chất lượng nước, nhiệt độ không khí, độ ẩm, và nhiều yếu tố khác. Các cảm biến này truyền dữ liệu về đám mây, nơi chúng được phân tích và hiển thị trên ứng dụng của bạn.</p>
+                <p class="animate-fade-in-up">Khả năng giám sát thời gian thực giúp bạn phát hiện sớm các vấn đề tiềm ẩn và đưa ra hành động khắc phục ngay lập tức.</p>
+
+                <h3 class="animate-fade-in-up">AI dự đoán sản lượng</h3>
+                <p class="animate-fade-in-up">Sử dụng trí tuệ nhân tạo (AI), chúng tôi phát triển các mô hình dự đoán sản lượng dựa trên dữ liệu lịch sử, điều kiện môi trường, và tốc độ tăng trưởng của vật nuôi. Điều này giúp bạn đưa ra các quyết định chính xác hơn về thời điểm thu hoạch, lượng thức ăn cần thiết, và kế hoạch kinh doanh.</p>
+                <p class="animate-fade-in-up">AI cũng có thể phân tích xu hướng dịch bệnh và đưa ra cảnh báo sớm, giúp bạn chủ động phòng ngừa rủi ro.</p>
+
+                <h3 class="animate-fade-in-up">Báo cáo và phân tích dữ liệu</h3>
+                <p class="animate-fade-in-up">Ứng dụng của chúng tôi cung cấp các báo cáo chi tiết và công cụ phân tích dữ liệu mạnh mẽ. Bạn có thể xem biểu đồ về chất lượng nước theo thời gian, theo dõi hiệu suất cho ăn, đánh giá tăng trưởng của vật nuôi, và tính toán hiệu quả kinh tế.</p>
+                <p class="animate-fade-in-up">Những thông tin này là cơ sở để bạn đưa ra các chiến lược cải tiến, tối ưu hóa quy trình sản xuất và tăng cường lợi nhuận.</p>
+                
+                <a href="../index.html#solutions" class="back-to-solutions">
+                    <i class="fas fa-arrow-left"></i>
+                    Quay lại Giải pháp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/footer.js"></script>
+
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.solution-detail-content .animate-fade-in-up').forEach(el => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
